@@ -1,17 +1,17 @@
-import SwiftUI
+import UIKit
 
 enum AppColor {
-    static let accent = Color.accentColor
-    static let background = Color(uiColor: .systemBackground)
-    static let primaryText = Color(uiColor: .label)
-    static let secondaryText = Color(uiColor: .secondaryLabel)
-    static let cardBackground = Color(uiColor: .secondarySystemBackground)
+    static let accent = UIColor.systemGreen
+    static let background = UIColor.systemBackground
+    static let primaryText = UIColor.label
+    static let secondaryText = UIColor.secondaryLabel
+    static let cardBackground = UIColor.secondarySystemBackground
 }
 
 enum AppFont {
-    static let title = Font.system(.largeTitle, design: .rounded, weight: .bold)
-    static let headline = Font.system(.headline, design: .rounded, weight: .semibold)
-    static let body = Font.system(.body, design: .default, weight: .regular)
+    static let title = UIFont.systemFont(ofSize: 34, weight: .bold)
+    static let headline = UIFont.systemFont(ofSize: 17, weight: .semibold)
+    static let body = UIFont.systemFont(ofSize: 17, weight: .regular)
 }
 
 enum AppSpacing {
@@ -22,18 +22,14 @@ enum AppSpacing {
     static let extraLarge: CGFloat = 24
 }
 
-private struct StandardCardModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding(AppSpacing.large)
-            .background(AppColor.cardBackground)
-            .clipShape(RoundedRectangle(cornerRadius: AppSpacing.small, style: .continuous))
-            .shadow(color: .black.opacity(0.08), radius: AppSpacing.small, y: AppSpacing.extraSmall)
-    }
-}
-
-extension View {
-    func standardCardStyle() -> some View {
-        modifier(StandardCardModifier())
+extension UIView {
+    func applyStandardCardStyle() {
+        backgroundColor = AppColor.cardBackground
+        layer.cornerRadius = AppSpacing.small
+        layer.cornerCurve = .continuous
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.08
+        layer.shadowRadius = AppSpacing.small
+        layer.shadowOffset = CGSize(width: 0, height: AppSpacing.extraSmall)
     }
 }

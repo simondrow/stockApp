@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0A0000010000000000000001 /* StockTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000020000000000000001 /* StockTrainingApp.swift */; };
-		0A0000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000020000000000000002 /* ContentView.swift */; };
+		0A0000010000000000000002 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000020000000000000002 /* MainViewController.swift */; };
 		0A0000010000000000000003 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0000020000000000000003 /* DesignSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A0000020000000000000001 /* StockTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrainingApp.swift; sourceTree = "<group>"; };
-		0A0000020000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A0000020000000000000002 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0A0000020000000000000003 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		0A0000020000000000000004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0000020000000000000005 /* StockTrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		0A0000040000000000000004 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A0000020000000000000002 /* ContentView.swift */,
+				0A0000020000000000000002 /* MainViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0000010000000000000001 /* StockTrainingApp.swift in Sources */,
-				0A0000010000000000000002 /* ContentView.swift in Sources */,
+				0A0000010000000000000002 /* MainViewController.swift in Sources */,
 				0A0000010000000000000003 /* DesignSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,10 +337,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "炒股训练";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
@@ -369,10 +369,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "炒股训练";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
