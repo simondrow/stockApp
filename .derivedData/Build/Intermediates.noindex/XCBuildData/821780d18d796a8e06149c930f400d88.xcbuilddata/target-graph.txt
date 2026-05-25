@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'StockTrainingApp' in project 'StockTrainingApp' (no dependencies)
