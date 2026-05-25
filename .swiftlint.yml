@@ -1,0 +1,33 @@
+reporter: "xcode"
+
+disabled_rules:
+  - trailing_whitespace
+
+opt_in_rules:
+  - empty_count
+  - first_where
+  - sorted_imports
+
+included:
+  - StockTrainingApp
+
+excluded:
+  - StockTrainingApp.xcodeproj
+  - Pods
+  - Carthage
+  - .build
+
+line_length:
+  warning: 140
+  ignores_comments: true
+  ignores_urls: true
+
+type_body_length:
+  warning: 400
+
+function_body_length:
+  warning: 120
+
+force_cast: warning
+force_try: warning
+force_unwrapping: warning

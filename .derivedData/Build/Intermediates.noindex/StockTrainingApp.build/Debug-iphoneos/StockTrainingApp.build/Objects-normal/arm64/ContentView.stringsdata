@@ -1,0 +1,16 @@
+{
+  "source": "/Users/simon/Documents/Codex/stockApp/StockTrainingApp/Views/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "炒股训练"
+      },
+      {
+        "comment": "",
+        "key": "Phase 1 项目骨架已初始化"
+      }
+    ]
+  },
+  "version": 1
+}
